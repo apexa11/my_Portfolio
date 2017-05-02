@@ -1,0 +1,38 @@
+body {
+    font-family: 'Lato', sans-serif;
+    color: #747704;
+    font-weight: 300;
+    max-width: 100%;
+}
+.text-muted {
+    padding: 10px 0;
+
+    color: #BCBBBB;
+}
+/** main header **/
+.text-thin {
+    font-weight: 100;
+}
+.title-super {
+    font-size: 40px;
+}
+/** main logo **/
+.top-logo {
+    margin-top: 5px;
+}
+.modal-title {
+    color: black;
+    font-weight: 600;
+}
+.modal-line {
+    color: black;
+    font-weight: 800;
+}
+
+/***** title *****/
+
+@media screen and (max-width: 401px) {
+    .head-title {
+        text-align: left;
+    }
+}
