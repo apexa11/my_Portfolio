@@ -5,7 +5,7 @@ body {
     max-width: 100%;
 }
 .text-muted {
-    padding: 10px 0;
+    padding: 1  0px 0;
 
     color: #BCBBBB;
 }
@@ -29,9 +29,9 @@ body {
     font-weight: 800;
 }
 
-/***** title *****/
+/***** title alignment *****/
 
-@media screen and (max-width: 401px) {
+@media (max-width: 401px) {
     .head-title {
         text-align: left;
     }
