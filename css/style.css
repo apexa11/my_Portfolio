@@ -1,24 +1,33 @@
 body {
-    font-family: 'Lato', sans-serif;
-    color: #747704;
+    color: black;
     font-weight: 300;
     max-width: 100%;
+    background-color: #fafaf6;
+}
+h3 {
+    color: #02adea;
 }
 .text-muted {
-    padding: 1  0px 0;
-
-    color: #BCBBBB;
+    padding: 5px;
+    font-size: 30px;
+    color: black;
 }
 /** main header **/
+
 .text-thin {
     font-weight: 100;
+    font-family: "Lobster", cursive;
+    font-size: 60px;
+    color: black;
 }
-.title-super {
-    font-size: 40px;
+.sub-title {
+    font-size: 20px;
+    color: #898786;
 }
 /** main logo **/
+
 .top-logo {
-    margin-top: 5px;
+    margin-top: 20px;
 }
 .modal-title {
     color: black;
@@ -28,13 +37,43 @@ body {
     color: black;
     font-weight: 800;
 }
-
+.portfolio-footer p {
+    text-align: center;
+    color: #898786;
+    margin-top: 10px;
 }
+.main-logo {
+    margin-top: 15px;
+}
+.feature:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+/*** Zocial ***/
 
+[class*="fontawesome-"]:before {
+    font-family: "FontAwesome", sans-serif;
+    color: #81A1C7;
+    margin: auto 4px;
+    font-size: 20px;
+    display: inline;
+}
+.view {
+    font-size: 17px;
+    color: #81A1C7;
+}
+a.fontawesome-github.view {
+    text-decoration: none;
+}
+.bottom {
+    border-bottom: 1px solid #EFF1F4;
+    margin-top: 10px;
+}
 /***** title alignment *****/
 
-@media (max-width: 401px) {
-    .head-title {
+@media (max-width: 400px) {
+    .text-thin,
+    .sub-title {
         text-align: left;
     }
 }

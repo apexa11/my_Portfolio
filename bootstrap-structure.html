@@ -1,129 +1,151 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width , initial-scale=1" >
-      <title>My Portfolio</title>
-      <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
-      <script type="text/javascript" src="js/jquery-1.12.3.js"></script>
-      <script type="text/javascript" src="js/bootstrap.min.js"></script>
-      <link rel="stylesheet" href="css/bootstrap.css">
-      <link rel="stylesheet" href="css/style.css">
-   </head>
-   <body>
 
-      <div class="container">
-         <div class="row">
-            <div class="col-md-6">
-               <img class="top-logo" src="/Users/apexa/Desktop/Udacity Course/myportfolio/framework/img/logo1.png" alt="logo">
-            </div>
-            <div class="col-md-6 text-right text-uppercase head-title">
-               <h1 class="title-super text-thin">Apexa Patel</h1>
-               <h4>Full-stack Developer</h4>
-            </div>
-         </div>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <title>My Portfolio</title>
 
-         <div class="row">
-            <div class="col-ms-12">
-            <p class="line"></p>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="http://weloveiconfonts.com/api/?family=fontawesome" rel="stylesheet">
 
-            </div>
-         </div>
+    <!-- Framework CSS file -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
+    <!-- custom CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-         <div class="row">
-            <div class="col-md-12">
-               <img class="img-responsive" src="/Users/apexa/Desktop/Udacity Course/myportfolio/framework/img/logo2.jpg" alt="main-logo">
+<body>
+    <!-- page content -->
+    <div class="container">
+        <!-- Header section -->
+        <header class="portfolio-header">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="top-logo" src="img/udacity1.png" alt="logo">
+                </div>
+
+                <div class="col-md-6 text-right head-title">
+                    <h1 class="title-super text-thin">Apexa Patel</h1>
+                    <h4 class="sub-title">Full-stack Developer</h4>
+                </div>
             </div>
-         </div>
-         <div class="row">
-            <div class="col-md-12 ">
-               <h2 class="text-muted">Featured Work</h2>
+        </header>
+
+        <!-- Banner section -->
+        <div class="row">
+            <div class="col-md-12 main-logo">
+                <img class="img-responsive" src="img/main1.jpg" alt="main-logo">
             </div>
-         </div><br/>
-         <div class="row text-center">
-            <div class="col-md-4">
-               <img class="img-responsive" src="/Users/apexa/Desktop/Udacity Course/myportfolio/framework/img/Movie_Trailer.png" alt="img1" data-toggle="modal"
-                  data-target="#project1">
-               <h3>Movie-Trailer Website</h3>
-               <a href="https://github.com/apexa11/MovieTrailer_website">
-               <p>https://github.com/apexa11/MovieTrailer_website</p>
-               </a>
-               <!-- Modal -->
-               <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                     <div class="modal-content">
+        </div>
+
+        <!-- Feature-Work section -->
+        <section class="portfolio-section">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2 class="text-muted">Featured Work</h2>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img class="img-responsive" src="img/Movie_Trailer.png" alt="img1">
+                    <h3 class="feature" data-toggle="modal" data-target="#project1">Movie-Trailer Website</h3>
+                    <a href="https://github.com/apexa11/MovieTrailer_website" class="fontawesome-github view" id="movieLable">
+
+                        View on GitHub
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <img class="img-responsive" src="img/Responsive-Website.png" alt="img2">
+                    <h3 class="feature" data-toggle="modal" data-target="#project2">Responsive Website</h3>
+                    <a href="https://github.com/apexa11/Responsive_website" class="fontawesome-github view" id="webLable">
+                        View on GitHub.
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <img class="img-responsive" src="img/Responsive-blog.png" alt="img3">
+                    <h3 class="feature" data-toggle="modal" data-target="#project3">Responsive Blog</h3>
+                    <a href="https://github.com/apexa11/Responsive_blog" class="fontawesome-github view" id="blogLable">
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="row">
+            <div class="col-md-12 bottom"></div>
+        </div>
+
+        <footer class="row">
+            <div class="col-md-12 portfolio-footer">
+                <p> Copyright &copy; 2017-2018 Apexa Patel </p>
+            </div>
+        </footer>
+
+        <div class="Modal">
+            <!-- Modal -->
+            <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="movieLable" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
                         <div class="modal-header">
-                           <h4 class="modal-title" id="myModalLabel">Movie-Trailer Website</h4>
+                            <h4 class="modal-title" id="movieModal">Movie-Trailer Website</h4>
                         </div>
                         <div class="modal-body">
-                           <img class="img-responsive" src="/Users/apexa/Desktop/Udacity Course/myportfolio/framework/img/Movie_Trailer.png"> <br>
-                           <p class="modal-line">This was my first project in this class. I learned a lot about python.
-                              here is website of movie trailer.
-                              it contain my all favourite movies with its trailer
-                           </p>
+                            <img class="img-responsive" src="img/Movie_Trailer.png" alt="movieTrailer-website">
+                            <br>
+                            <p class="modal-line">This was my first project in this class. I learned a lot about python. here is website of movie trailer. it contain my all favourite movies with its trailer
+                            </p>
                         </div>
                         <div class="modal-footer">
-                           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         </div>
-                     </div>
-                  </div>
-               </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4">
-               <img class="img-responsive" src="/Users/apexa/Desktop/Udacity Course/myportfolio/framework/img/Responsive-Website.png" alt="img2" data-toggle="modal"
-                  data-target="#project2">
-               <h3>Responsive Website</h3>
-               <a href="https://github.com/apexa11/Responsive_website">
-               <p>https://github.com/apexa11/Responsive_website</p>
-               </a>
-               <!-- Modal -->
-               <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                     <div class="modal-content">
-                        <div class="modal-header">
-                           <h4 class="modal-title" id="myModalLabel">Responsibe Website</h4>
-                        </div>
-                        <div class="modal-body">
-                           <img class="img-responsive" src="/Users/apexa/Desktop/Udacity Course/myportfolio/framework/img/Responsive-Website.png"><br>
-                           Here is my second Project.
-                           Responsive Website with using HTML and CSS.
-                        </div>
-                        <div class="modal-footer">
-                           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="webLable" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="responsiveModal">Responsibe Website</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-responsive" src="img/Responsive-Website.png" alt="responsive-website">
+                        <br> Here is my second Project. Responsive Website with using HTML and CSS.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4">
-               <img class="img-responsive" src="/Users/apexa/Desktop/Udacity Course/myportfolio/framework/img/Responsive-blog.png" alt="img3" data-toggle="modal"
-                  data-target="#project3">
-               <h3>Responsive Blog</h3>
-               <a href="https://github.com/apexa11/Responsive_blog">
-               <p>https://github.com/apexa11/Responsive_blog</p>
-               </a>
-               <!-- Modal -->
-               <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                     <div class="modal-content">
-                        <div class="modal-header">
-                           <h4 class="modal-title" id="myModalLabel">Responsive Blog</h4>
-                        </div>
-                        <div class="modal-body">
-                           <img class="img-responsive" src="/Users/apexa/Desktop/Udacity Course/myportfolio/framework/img/Responsive-blog.png"><br>
-                           Here is my third project.
-                           Responsive Blog with using HTML and CSS.
-                        </div>
-                        <div class="modal-footer">
-                           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="blogLable" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="blogModal">Responsive Blog</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="img/Responsive-blog.png" alt="responsive-blog">
+                    <br> Here is my third project. Responsive Blog with using HTML and CSS.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
             </div>
-         </div>
-      </div>
-   </body>
+        </div>
+    </div>
+
+    <!-- Framework JS file -->
+    <script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</body>
+
 </html>
-
